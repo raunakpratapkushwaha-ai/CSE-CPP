@@ -1,20 +1,39 @@
 #include <iostream>
-#include <ostream>
-#include <string>
+
 using namespace std;
-int main(){
-    // int a = 1;
-    // int b = 2;
-    // int c = 3;
 
-    // cout <<"sqaure of 1 is " << a * a << "\n"; 
-    // cout <<"sqaure of 2 is " << b * b << "\n";
-    // cout <<"sqaure of 3 is " << c * c << "\n";
+int main() {
+    int a ;
+    cout << "Enter you first number : ";
+    cin >> a;
 
-    cout << "8 + 4 is " << 8 + 4 << "\n";
-    cout << "8 - 4 is " << 8 - 4 << "\n";
-    cout << "8 * 4 is " << 8 * 4 << "\n";
-    cout << "8 / 4 is " << 8 / 4 << "\n";
+    int b ;
+    cout << "enter your second number : ";
+    cin >> b;
+    
+    char c ;
+    cout << "enter your operator : ";
+    cin >> c ;
 
-    cout << "7.0 / 2 is " << 7.0 / 2 << "\n";
+    switch (c) {
+    case '+':
+        cout << "Result: " << a + b << endl;
+        break;
+
+    case '-':
+        cout << "Result : " << a - b << endl;
+        break;
+    
+    case '*':
+        cout << "Result : " << a * b << endl;
+        break;
+
+    case '/':
+        cout << "Result : " << a / b << endl;
+        break;
+
+    default:
+        cout << "Invalid operator" << endl;
+    }
+
 }
